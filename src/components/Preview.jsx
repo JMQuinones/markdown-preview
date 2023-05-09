@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { marked } from "marked";
 import remarkGfm from "remark-gfm";
+
 //import ReactMarkdown from "react-markdown";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 function Preview(props) {
@@ -16,7 +17,11 @@ function Preview(props) {
     <div className="col-7">
       <h1 className="title">Preview</h1>
       {/*<div dangerouslySetInnerHTML={this.createMarkup()} id="preview" />*/}
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{props.input}</ReactMarkdown>
+      <div id="preview">
+        <ReactMarkdown remarkPlugins={[remarkGfm]} id="preview">
+          {props.input}
+        </ReactMarkdown>
+      </div>
     </div>
   );
 }

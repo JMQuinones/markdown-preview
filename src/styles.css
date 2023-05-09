@@ -1,0 +1,35 @@
+:root {
+    --background: #33343d;
+  }
+  body {
+    background-color: var(--background) !important;
+    color: white !important;
+  }
+  textarea {
+    width: 100%;
+  }
+  
+  #editor {
+    height: 80vh;
+    min-height: 80vh;
+  }
+  #preview {
+    color: black;
+    background-color: white;
+    min-height: 80vh;
+    padding: 10px;
+    border-radius: 1%;
+  }
+  .col {
+    border: 1px solid red;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid !important;
+  }
+  
